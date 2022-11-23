@@ -8,10 +8,10 @@ const CountrySchema = new Schema({
         required: true,
         trim: true
     },
-    visaLength: {
-        type: String,
-        required: true,
-    }
+    // visaLength: {
+    //     type: String,
+    //     required: true,
+    // }
 });
 
 const Country = model('Country', CountrySchema);

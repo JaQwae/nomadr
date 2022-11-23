@@ -35,39 +35,6 @@ const countryController = {
     });      
 },
 
-
-createCountry({ body }, res) {
-    country.create(body)
-    .then(dbCountryData => res.json(dbCountryData))
-    .catch(err => res.json(err));
-},
-
-updateCountry({ params, body }, res) {
-    country.findOneAndUpdate({ _id: params.id }, body, { new: true, runValidators: true })
-.then(dbCountryData => {
-    if (!dbCountryData) {
-        res.status(404).json({ message: 'No countryFound with that id' });
-        return;
-    }
-    res.json(dbCountryData);
-})
-.catch(err => res.json(err));
-},
-
-removeCountry({ params }, res) {
-    Comment.deleteMany({ countryId: params.id})
-    .then(() => {
-        country.findOneAndRemove({ countryId: params.id })
-        .then(dbCountryData => {
-            if (!dbCountryData) {
-            res.status(404).json({ message: 'No country found with that id' });
-            return;
-        }
-        res.json(dbCountryData);
-        });
-    })
-    .catch(err => res.json(err));
-},
 }
 
 module.exports= countryController
