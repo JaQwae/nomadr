@@ -2,7 +2,7 @@ const { create } = require('domain');
 const { Country } = require('../models');
 
 const countryController = {
-    getCountrys(req, res) {
+    getCountry(req, res) {
         country.find({})
         .select('-__v')
         .sort({ _id: -1 })
