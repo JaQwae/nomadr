@@ -2,7 +2,7 @@ const { Schema, model } = require('mongoose');
 
 const incomeSchema = new Schema({
   income: {
-    type: String,
+    type: Number,
     required: true,
   },
 });
