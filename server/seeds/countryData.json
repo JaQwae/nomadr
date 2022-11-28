@@ -1,29 +1,32 @@
 [
     {
-        "name": "Costa Rica",
-        "length": "12 months",
-        "monthly income requirement": "$3,000",
-        "taxation": "exempt",
+        "country": "Costa Rica",
+        "program": "Costa Rica Digital Nomad Visa",
+        "length": "12 months, renewable",
+        "monthly income requirement": "$3,000+",
+        "taxation": "exempt from income tax",
+        "visa fee": "$100",
         "police clearance": "required",
-        "health insurance": "required",
-        "fee": "$100"
+        "health insurance": "required"
     },
     {
-        "name": "Georgia",
-        "length": "12 months",
-        "monthly income requirement": "$2,000",
+        "country": "Georgia",
+        "program": "Remotely From Georgia Program",
+        "length": "12 months, renewable",
+        "monthly income requirement": "$2,000+",
         "taxation": "standard taxation after 6 months",
+        "visa fee": "Free",
         "police clearance": "not required",
-        "health insurance": "required",
-        "fee": "Free"
+        "health insurance": "required"
     },
     {
-        "name": "Colombia",
-        "length": "24 months",
-        "monthly income requirement": "$665.52",
+        "country": "Colombia",
+        "program": "Colombia Digital Nomad Visa Program",
+        "length": "24 months, max stay 6 months/year, renewable",
+        "monthly income requirement": "$665.52+",
         "taxation": "standard taxation after 6 months",
+        "visa fee": "Free",
         "police clearance": "not required",
-        "health insurance": "required",
-        "fee": "Free"
+        "health insurance": "required"
     }
 ]
