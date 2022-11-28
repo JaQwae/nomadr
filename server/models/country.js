@@ -4,7 +4,6 @@ const { Schema, model, Types } = require('mongoose');
 const CountrySchema = new Schema({
     country: {
         type: String,
-        required: true,
     },
     program: {
         type: String,
@@ -26,7 +25,7 @@ const CountrySchema = new Schema({
     },
     healthInsurance: {
         type: String,
-    }
+    },
 });
 
 const Country = model('Country', CountrySchema);
