@@ -2,7 +2,8 @@ const { create } = require('domain');
 const { Country } = require('../models');
 
 const countryController = {
-    getCountry(req, res) {
+    // Get all countries
+    getAllCountries(req, res) {
         country.find({})
         .select('-__v')
         .sort({ _id: -1 })
@@ -16,16 +17,12 @@ const countryController = {
     getCountryById({ params }, res) {
         country.findOne({ _id: params.id })
         .populate({
-            path: 'comments',
-            select: '-__v'
-        })
-        .populate({
-            path: 'friends',
+            path: 'income',
             select: '-__v'
         })
         .then(dbCountryData => {
             if (!dbCountryData) {
-                res.status(404).json({ message: 'No country found with that id' });
+                res.status(404).json({ message: 'No country found' });
                 return;                
             }
             res.json(dbCountryData);
