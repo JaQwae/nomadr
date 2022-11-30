@@ -6,7 +6,7 @@ const countryData = require('./countryData.json');
 db.once('open', async () => {
   await Country.deleteMany({});
 
-  const countries = await Tech.insertMany(countryData);
+  const countries = await Country.insertMany(countryData);
 
   console.log('Countries seeded!');
   process.exit(0);

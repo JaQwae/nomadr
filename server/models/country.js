@@ -30,4 +30,4 @@ const CountrySchema = new Schema({
 
 const Country = model('Country', CountrySchema);
 
-module.exports = CountrySchema;
+module.exports = Country;
