@@ -9,7 +9,7 @@
 - [Credits](#credits/license)
 - [Mock up](#mock-up)
 - [Questions](#questions)
--
+
 
 ## Description
 We want to build a website where people can discover flights, find correct visa requirement, and get help with the local language. Nomadr is a simple application that aid with traveling and learning key phrases in a new language .
