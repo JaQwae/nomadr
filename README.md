@@ -6,10 +6,10 @@
 - [User Story](#user-story)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
+- [Credits](#credits/license)
 - [Mock up](#mock-up)
 - [Questions](#questions)
-- [License] (#license)
+-
 
 ## Description
 We want to build a website where people can discover flights, find correct visa requirement, and get help with the local language. Nomadr is a simple application that aid with traveling and learning key phrases in a new language .
@@ -24,7 +24,7 @@ SO THAT I can make travel plans with ease and save them all in one space.
 ## Usage
 
 
-## Credits
+## Credits/license
 Jaqwae Ellison, Joe Lewis, LaTavya Collins, Francisco Rangel, Alexandra Najera
 UTA BootCamp
 A huge thank you to Bob, Jenny, Leland, Derek, and Chandler for all the help.
@@ -35,5 +35,5 @@ A huge thank you to Bob, Jenny, Leland, Derek, and Chandler for all the help.
 ## Questions
 
 
-## License
+
 
