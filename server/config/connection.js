@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/googlebooks', error =>  {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/nomadr', error =>  {
   if (error ) throw error
   // useNewUrlParser: true,
   // useUnifiedTopology: true,
