@@ -4,17 +4,20 @@ import React, {useState} from 'react';
 import FlashcardList from './LanguageCards/FlashcardList';
 import {spanishList} from './LanguageCards/spanishDB';
 import {frenchList} from './LanguageCards/frenchDB';
+import {BrowerRouter as Router, Route} from 'react-router-dom';
+import NavbarOutline from './NavbarOutline;'
 
 function App() {
   const [cards, setCards] = useState(frenchList)
   return (
-    
+    <Router>
     <div>
       
-     
+     <NavbarOutline/>
 
       <FlashcardList flashcards = {cards}/>
     </div>
+    </Router>
   );
 }
 
