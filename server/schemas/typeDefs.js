@@ -19,8 +19,7 @@ const typeDefs = gql`
     }
 
   type Query {
-    Country: [Country]
-    matchups(_id: String): [Matchup]
+    country(_id: String): [Country]
   }
 
   type Mutation {
