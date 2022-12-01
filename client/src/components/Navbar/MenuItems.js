@@ -12,6 +12,11 @@ export const MenuItems = [
         // icon: <i class="fa-solid fa-person-walking-luggage"></i>
     },
     {
+        title: 'Digital Nomad Visas',
+        url: '/digitalnomadvisas',
+        cName: 'nav-links',
+    },
+    {
         title: 'Language Practice',
         url: '/languagepractice',
         cName: 'nav-links',
