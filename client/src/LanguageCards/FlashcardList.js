@@ -8,7 +8,7 @@ const FlashcardList = ({flashcards})  => {
         {flashcards.map(flashcard => {
             return (< Flashcard flashcard = {flashcard} key = {flashcard.id}/>)
         })}
-      
+       
     </div>
    
   )

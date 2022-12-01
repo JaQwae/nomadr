@@ -1,146 +1,159 @@
-import React from 'react'
-
-export default function spanishDB() {
-const spanishList = 
+export const spanishList = 
   [
     {
       "id": 1,
       "englishWord": "Hello",
-      "spanishTranslation": "Hola"
+      "translation": "Hola"
       
     },
     {
+      "id": 2,
       "englishWord": "Good Morning",
-      "spanishTranslation": "Buenos Dias"
+      "translation": "Buenos Dias"
       
     },
     {
+      "id": 3,
       "englishWord": "Good Afternoon",
-      "spanishTranslation": "Buenas Tardes"
+      "translation": "Buenas Tardes"
       
     },
     {
+      "id": 4,
       "englishWord": "Good Night",
-      "spanishTranslation": "Buenas Noches"
+      "translation": "Buenas Noches"
       
     },
     {
+      "id": 5,
       "englishWord": "See you later",
-      "spanishTranslation": "Hasta Luego"
+      "translation": "Hasta Luego"
       
     },
     {
+      "id": 6,
       "englishWord": "Please",
-      "spanishTranslation": "Por Favor"
+      "translation": "Por Favor"
       
     },
     {
+      "id": 7,
       "englishWord": "Thank you",
-      "spanishTranslation": "Gracias"
+      "translation": "Gracias"
       
     },
     {
+      "id": 8,
       "englishWord": "I'm sorry",
-      "spanishTranslation": "Lo siento"
+      "translation": "Lo siento"
       
     },
     {
+      "id": 9,
       "englishWord": "Excuse me",
-      "spanishTranslation": "Disculpe",
+      "translation": "Disculpe",
       
     },
     {
+      "id": 10,
       "englishWord": "Yes",
-      "spanishTranslation": "Si",
+      "translation": "Si",
       
     },
     {
+      "id": 11,
       "englishWord": "No",
-      "spanishTranslation": "No"
+      "translation": "No"
       
     },
     {
+      "id": 12,
       "englishWord": "I don't understand",
-      "spanishTranslation": "No entiendo"
+      "translation": "No entiendo"
       
     },
     {
+      "id": 13,
       "englishWord": "Do you speak english?",
-      "spanishTranslation": "Hablas ingles?"
+      "translation": "Hablas ingles?"
       
     },
     {
+      "id": 14,
       "englishWord": "How are you?",
-      "spanishTranslation": "Como esta?"
+      "translation": "Como esta?"
       
     },
     {
+      "id": 15,
       "englishWord": "What is this?",
-      "spanishTranslation": "Que es esto?"
+      "translation": "Que es esto?"
       
     },
     {
+      "id": 16,
       "englishWord": "How much does this cost?",
-      "spanishTranslation": "Cuanto cuesta?",
+      "translation": "Cuanto cuesta?",
       
     },
     {
+      "id": 17,
       "englishWord": "Where is...?",
-      "spanishTranslation": "Donde esta...?"
+      "translation": "Donde esta...?"
       
     },
     {
+      "id": 18,
       "englishWord": "I want...",
-      "spanishTranslation": "Quiero..."
+      "translation": "Quiero..."
       
     },
     {
+      "id": 19,
       "englishWord": "Do you have...?",
-      "spanishTranslation": "Tiene...?"
+      "translation": "Tiene...?"
       
     },
     {
+      "id": 20,
       "englishWord": "I am lost.",
-      "spanishTranslation": "Estoy perdido/a"
+      "translation": "Estoy perdido/a"
       
     },
     {
+      "id": 21,
       "englishWord": "Is it ok to drink the tap water?",
-      "spanishTranslation": "Se puede tomar agua de la llave?"
+      "translation": "Se puede tomar agua de la llave?"
     
     },
     {
+      "id": 22,
       "englishWord": "How do I get to....?",
-      "spanishTranslation": "Como llego a....?"
+      "translation": "Como llego a....?"
       
     },
     {
+      "id": 23,
       "englishWord": "Can you help me?",
-      "spanishTranslation": "Me puede ayudar?"
+      "translation": "Me puede ayudar?"
       
     },
     {
+      "id": 24,
       "englishWord": "I am sick",
-      "spanishTranslation": "Estoy enfermo/a"
+      "translation": "Estoy enfermo/a"
       
     },
     {
+      "id": 25,
       "englishWord": "Left",
-      "spanishTranslation": "Izquiera"
+      "translation": "Izquiera"
       
-    },  {
+    }, 
+    {
+      "id": 26,
       "englishWord": "Right",
-      "spanishTranslation": "Derecha"
+      "translation": "Derecha"
       
     },
   ]
-  return (
-    <div>
-      
-    </div>
-  )
-}
-
-
-
-

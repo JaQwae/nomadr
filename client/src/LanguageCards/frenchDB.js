@@ -1,127 +1,155 @@
+
+
+export const frenchList = 
 [
     {
+        "id":1,      
         "englishWord": "Hello",
-        "frenchTranslation": "bonjour"
+        "translation": "bonjour"
         
       },
       {
+        "id":2,   
         "englishWord": "Good Afternoon",
-        "frenchTranslation": "bonne après-midi"
+        "translation": "bonne après-midi"
         
       },
       {
+        "id":3,   
         "englishWord": "Good Night",
-        "frenchTranslation": "Hola"
+        "translation": "bonne nuit"
         
       },
       {
+        "id":4,   
         "englishWord": "see you later",
-        "frenchTranslation": "à plus tard"
+        "translation": "à plus tard"
         
       },
       {
+        "id":5,   
         "englishWord": "please",
-        "frenchTranslation": "s'il vous plaît"
+        "translation": "s'il vous plaît"
         
       },
       {
+        "id":6,   
         "englishWord": "thank you",
-        "frenchTranslation": "merci"
+        "translation": "merci"
         
       },
       {
+        "id":7,   
         "englishWord": "I'm sorry",
-        "frenchTranslation": "Je suis désolé"
+        "translation": "Je suis désolé"
         
       },
       {
+        "id":8,   
         "englishWord": "excuse me",
-        "frenchTranslation": "pardon"
+        "translation": "pardon"
         
       },
       {
+        "id":9,   
         "englishWord": "yes",
-        "frenchTranslation": "oui"
+        "translation": "oui"
         
       },
       {
+        "id":10,   
         "englishWord": "no",
-        "frenchTranslation": "non"
+        "translation": "non"
         
       },
       {
+        "id":11,   
         "englishWord": "I don't understand",
-        "frenchTranslation": "je ne comprends pas"
+        "translation": "je ne comprends pas"
         
       },
       {
+        "id":12,   
         "englishWord": "Do you speak english?",
-        "frenchTranslation": "parlez vous anglais?"
+        "translation": "parlez vous anglais?"
         
       },
       {
+        "id":13,   
         "englishWord": "How are you?",
-        "frenchTranslation": "Comment vas-tu?"
+        "translation": "Comment vas-tu?"
         
       },
       {
+        "id":14,   
         "englishWord": "What is this?",
-        "frenchTranslation": "Qu'est-ce que c'est?"
+        "translation": "Qu'est-ce que c'est?"
         
       },
       {
+        "id":15,   
         "englishWord": "How much does this cost?",
-        "frenchTranslation": "Combien ça coûte?"
+        "translation": "Combien ça coûte?"
         
       },
       {
+        "id":16,   
         "englishWord": "Where is...?",
-        "frenchTranslation": "où est...?"
+        "translation": "où est...?"
         
       },
       {
+        "id":17,   
         "englishWord": "I want....",
-        "frenchTranslation": "Je veux..."
+        "translation": "Je veux..."
         
       },
       {
+        "id":18,   
         "englishWord": "Do you have...?",
-        "frenchTranslation": "As-tu...?"
+        "translation": "As-tu...?"
         
       },
       {
+        "id":19,   
         "englishWord": "I am lost",
-        "frenchTranslation": "je suis perdu"
+        "translation": "je suis perdu"
         
       },
       {
+        "id":20,   
         "englishWord": "Is it ok to drink the tap water?",
-        "frenchTranslation": "Est-il acceptable de boire l'eau du robinet ?"
+        "translation": "Est-il acceptable de boire l'eau du robinet ?"
         
       },
       {
+        "id":21,   
         "englishWord": "How do I get to...",
-        "frenchTranslation": "Comment puis-je aller à...?"
+        "translation": "Comment puis-je aller à...?"
         
       },
       {
+        "id":22,   
         "englishWord": "Can you help me?",
-        "frenchTranslation": "Pouvez-vous m'aider?"
+        "translation": "Pouvez-vous m'aider?"
         
       },
       {
+        "id":23,   
         "englishWord": "I am sick",
-        "frenchTranslation": "je suis malade"
+        "translation": "je suis malade"
         
       },
       {
+        "id":24,   
         "englishWord": "left",
-        "frenchTranslation": "la gauche"
+        "translation": "la gauche"
         
       },
       {
+        "id":25,   
         "englishWord": "right",
-        "frenchTranslation": "droit"
+        "translation": "droit"
         
       },
      
