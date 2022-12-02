@@ -26,12 +26,20 @@
 
 
 ## Description
+<<<<<<< HEAD
+Everyone aspires to one day have the opportunity to travel. We wanted to build a website where people can find correct digital visa requirement and get help with the local language. Nomadr is a simple application that aid with traveling and learning key phrases in a new language.
+=======
 Everyone aspires to one day have the opportunity to travel. We wanted to build a website where people can discover flights, find correct visa requirement and get help with the local language. Nomadr is a simple application that aid with traveling and learning key phrases in a new language.
+>>>>>>> 7945b0328646a4179952f71e8d10751d3f7142fa
 
 ## User Story
 ```As A potential traveler```
 
+<<<<<<< HEAD
+```I WANT a place where I can lookup digital visa requirements and necessary travel langauge.```
+=======
 ```I WANT a place where I can lookup flights, visa requirements and necessary travel langauge.```
+>>>>>>> 7945b0328646a4179952f71e8d10751d3f7142fa
 
 ```SO THAT I can make travel plans with ease and save them all in one space.```
 
@@ -88,6 +96,7 @@ A huge thank you to
 Deployed live on https://.................. . Check out!
 
 Insert pictures here
+<<<<<<< HEAD
 
 
 ## Contributing
@@ -96,6 +105,20 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 Don't forget to give the project a star! Thanks again!
+
+
+
+
+=======
+
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+Don't forget to give the project a star! Thanks again!
+>>>>>>> 7945b0328646a4179952f71e8d10751d3f7142fa
 
 
 
