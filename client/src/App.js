@@ -15,7 +15,7 @@ import FooterContainer from "./components/containers/footer";
 import Home from "./components/Pages/Home";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
-import Profile from './pages/Profile';
+import Profile from './pages/Profile'
 import Visa from './components/Pages/Visa';
 import LanguagePractice from './components/Pages/Language Practice';
 import './App.css';
@@ -52,7 +52,7 @@ function App() {
         <NavbarOutline />
         {/* <Login /> */}
         
-     
+     <Profile />
        
         <div className="container">
           <Routes>
