@@ -9,13 +9,13 @@ export const Container = styled.div`
   font-family: 'Montserrat', sans-serif;
   // position: relative;
   // top: 300px;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   // height: 2.5rem; 
 
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1000px max-height: 10%) {
     padding: 70px 30px;
   }
 `;
@@ -27,6 +27,7 @@ export const Wrapper = styled.div`
     max-width: 1000px;
     margin: 0 auto;
     // padding-bottom: 2.5rem;
+    
 `
 
 export const Column = styled.div`
@@ -41,7 +42,7 @@ export const Row = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   grid-gap: 20px;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1000px max-height: 10%) {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 `;
@@ -77,4 +78,4 @@ export const Button = styled.button`
       transition: 200ms ease-in;
       background-color: #E46f44;
   }
-`;
+`
