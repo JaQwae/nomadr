@@ -1,35 +1,30 @@
 import React from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { Container, Wrapper, Row, Column, Link, Title, Button } from './styles/footer';
 
-const Footer = () => {
-  const location = useLocation();
-  const navigate = useNavigate();
-  return (
-    <footer className="w-100 mt-auto bg-secondary p-4">
-      <div className="container text-center mb-5">
-        {location.pathname !== '/' && (
-          <button
-            className="btn btn-dark mb-3"
-            onClick={() => navigate(-1)}
-          >
-            &larr; Go Back
-          </button>
-        )}
-        <h4>
-          Wanderlust{' '}
-          <span
-            className="emoji"
-            role="img"
-            aria-label="heart"
-            aria-hidden="false"
-          >
-            ❤️
-          </span>{' '}
-          - the Nomadr team
-        </h4>
-      </div>
-    </footer>
-  );
+export default function Footer({ children, ...restProps }) {
+  return <Container {...restProps}>{children}</Container>;
+}
+
+Footer.Wrapper = function FooterWrapper({children, ...restProps}) {
+  return <Wrapper {...restProps}>{children}</Wrapper>
+}
+
+Footer.Row = function FooterRow({ children, ...restProps }) {
+  return <Row {...restProps}>{children}</Row>;
 };
 
-export default Footer;
+Footer.Column = function FooterColumn({ children, ...restProps }) {
+  return <Column {...restProps}>{children}</Column>;
+};
+
+Footer.Link = function FooterLink({ children, ...restProps }) {
+  return <Link {...restProps}>{children}</Link>;
+};
+
+Footer.Title = function FooterTitle({ children, ...restProps }) {
+  return <Title {...restProps}>{children}</Title>;
+};
+
+Footer.Button = function FooterButton({ children, ...restProps }) {
+  return <Button {...restProps}>{children}</Button>;
+};
