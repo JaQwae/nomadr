@@ -10,6 +10,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavbarOutline from "./components/Navbar/Navbar";
 import FooterContainer from "./components/containers/footer";
 // import PlanTrip from "./PlanTrip"
+//import LanguagePractice from './components/Pages/Language Practice';
 
 import Home from "./pages/Home";
 import Signup from "./pages/Signup";
