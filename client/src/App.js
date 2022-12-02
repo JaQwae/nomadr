@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import {
   ApolloClient,
   InMemoryCache,
@@ -6,27 +6,16 @@ import {
   createHttpLink,
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
-// import FlashcardList from './LanguageCards/FlashcardList';
-// import {spanishList} from './LanguageCards/spanishDB';
-// import {frenchList} from './LanguageCards/frenchDB';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavbarOutline from "./components/Navbar/Navbar";
 import Footer from "./components/Footer";
-// import PlanTrip from "./PlanTrip";
+// import PlanTrip from "./PlanTrip"
 
-import './App.css';
-import React, {useState} from 'react';
-import FlashcardList from './components/LanguageCards/FlashcardList';
-import {spanishList} from './components/LanguageCards/spanishDB';
-import {frenchList} from './components/LanguageCards/frenchDB';
-import {BrowserRouter as Router, route } from "react-router-dom";
-import NavbarOutline from './NavbarOutline';
-import LanguagePractice from './components/Pages/Language Practice';
-import Home from './components/Pages/Home';
 import Home from "./pages/Home";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Profile from './pages/Profile';
+import Visas from './NomadVisas/index';
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
@@ -58,17 +47,17 @@ function App() {
     <Router>
     <div className="flex-column justify-flex-start min-100-vh">
         <NavbarOutline />
-        {/* <FlashcardList flashcards = {cards}/> */}
+        <Login />
         <div className="container">
           <Routes>
-            {/* <Route 
-            path="/home" 
-            component={PlanTrip} 
-            /> */}
               <Route 
                 path="/"
                 element={<Home />}
               />
+              <Route
+                path="/visas"
+                element={<Visas />}
+                />
               <Route 
                 path="/login" 
                 element={<Login />}
