@@ -13,6 +13,11 @@
     margin-left: 20px;
     cursor: pointer;
 }
+.navbar-logo img{
+
+height :70px;
+width : 150px;
+}
 
 .fa-react {
     margin-left: 0.5rem;
