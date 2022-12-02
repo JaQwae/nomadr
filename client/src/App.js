@@ -10,7 +10,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavbarOutline from "./components/Navbar/Navbar";
 import Footer from "./components/Footer";
 // import PlanTrip from "./PlanTrip"
-import LanguagePractice from './components/Pages/Language Practice';
+//import LanguagePractice from './components/Pages/Language Practice';
 
 import Home from "./pages/Home";
 import Signup from "./pages/Signup";
@@ -48,7 +48,7 @@ function App() {
     <Router>
     <div className="flex-column justify-flex-start min-100-vh">
         <NavbarOutline />
-        <LanguagePractice/>
+        
         
         <div className="container">
           <Routes>
@@ -78,7 +78,9 @@ function App() {
               />
               </Routes>
           </div>
-          <Home/>
+          <div>
+            <Visas/>
+          </div>
           <Footer />
         </div>
     </Router>
