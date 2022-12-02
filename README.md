@@ -1,15 +1,13 @@
 # Nomadr
+
 <div id="top"></div>
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="#">
-    <img src="nomadr-logo.png" alt="Logo" width="10%">
+    <img src= "https://user-images.githubusercontent.com/106499144/205199859-3e42e438-58d9-4db1-999b-ee00cceef646.png" alt="Logo" width="20%">
   </a>
-
-  <h3 align="center">Nomadr</h3>
-
   <p align="center">
     A single page application built with MERN Stack from scratch (MongoDB + Mongoose, Express, React & NodeJs)
   </p>
@@ -22,9 +20,9 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Run](#run)
-- [Credits](#credits/license)
+- [Credits](#credits)
 - [Mock up](#mock-up)
-- [Questions/Contributing](#questions/Contributing)
+- [Contributing](#Contributing)
 
 
 ## Description
@@ -32,7 +30,9 @@ Everyone aspires to one day have the opportunity to travel. We wanted to build a
 
 ## User Story
 ```As A potential traveler```
+
 ```I WANT a place where I can lookup flights, visa requirements and necessary travel langauge.```
+
 ```SO THAT I can make travel plans with ease and save them all in one space.```
 
 ## Installation
@@ -67,7 +67,7 @@ npm install
 npm start
 ```
 
-## Credits/license
+## Credits
 - [Alexandra Najera](https://github.com/alexyn26)
 - [Francisco Rangel](https://github.com/rangelf09)
 - [Jaqwae Ellison ](https://github.com/JaQwae)
@@ -81,7 +81,7 @@ A huge thank you to
 - Leland
 - Derek 
 - Chandler
--
+
  for all the help.
 
 ## Mock up
@@ -90,12 +90,13 @@ Deployed live on https://.................. . Check out!
 Insert pictures here
 
 
-## Questions/Contributing
+## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
 
 Don't forget to give the project a star! Thanks again!
+
 
 
 
