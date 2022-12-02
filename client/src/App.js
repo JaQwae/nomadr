@@ -13,7 +13,7 @@ function App() {
     <Router>
     <div>
       
-     <NavbarOutline/>
+    <NavbarOutline/>
 
       <FlashcardList flashcards = {cards}/>
     </div>
