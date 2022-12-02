@@ -12,11 +12,13 @@ import FooterContainer from "./components/containers/footer";
 // import PlanTrip from "./PlanTrip"
 //import LanguagePractice from './components/Pages/Language Practice';
 
-import Home from "./pages/Home";
+import Home from "./components/Pages/Home";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Profile from './pages/Profile';
-import Visas from './NomadVisas/index';
+import Visa from './components/Pages/Visa';
+import LanguagePractice from './components/Pages/Language Practice';
+import './App.css';
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
@@ -44,11 +46,14 @@ const client = new ApolloClient({
 
 function App() {
   return (
-    <ApolloProvider client={client}>
+     <ApolloProvider client={client}>
     <Router>
     <div className="flex-column justify-flex-start min-100-vh">
         <NavbarOutline />
         {/* <Login /> */}
+        
+     
+       
         <div className="container">
           <Routes>
               <Route 
@@ -57,7 +62,7 @@ function App() {
               />
               <Route
                 path="/visas"
-                element={<Visas />}
+                element={<Visa />}
                 />
               <Route 
                 path="/login" 
@@ -77,8 +82,11 @@ function App() {
               />
               </Routes>
           </div>
+          </div>
+          <footer>
           <FooterContainer />
-        </div>
+        </footer>
+      
     </Router>
     </ApolloProvider>
   );
