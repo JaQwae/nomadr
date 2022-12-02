@@ -1,5 +1,5 @@
 import React from 'react'
-import Footer from '../footer'
+import Footer from '../Footer'
 import Icon from '../icons'
 import { useLocation, useNavigate } from 'react-router-dom';
 
