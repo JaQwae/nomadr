@@ -14,6 +14,15 @@ import NavbarOutline from "./components/Navbar/Navbar";
 import Footer from "./components/Footer";
 // import PlanTrip from "./PlanTrip";
 
+import './App.css';
+import React, {useState} from 'react';
+import FlashcardList from './components/LanguageCards/FlashcardList';
+import {spanishList} from './components/LanguageCards/spanishDB';
+import {frenchList} from './components/LanguageCards/frenchDB';
+import {BrowserRouter as Router, route } from "react-router-dom";
+import NavbarOutline from './NavbarOutline';
+import LanguagePractice from './components/Pages/Language Practice';
+import Home from './components/Pages/Home';
 import Home from "./pages/Home";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
