@@ -8,7 +8,7 @@ import {
 import { setContext } from "@apollo/client/link/context";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavbarOutline from "./components/Navbar/Navbar";
-import Footer from "./components/Footer";
+import FooterContainer from "./components/containers/footer";
 // import PlanTrip from "./PlanTrip"
 //import LanguagePractice from './components/Pages/Language Practice';
 
@@ -48,8 +48,7 @@ function App() {
     <Router>
     <div className="flex-column justify-flex-start min-100-vh">
         <NavbarOutline />
-        
-        
+        {/* <Login /> */}
         <div className="container">
           <Routes>
               <Route 
@@ -78,10 +77,7 @@ function App() {
               />
               </Routes>
           </div>
-          <div>
-            <Visas/>
-          </div>
-          <Footer />
+          <FooterContainer />
         </div>
     </Router>
     </ApolloProvider>
