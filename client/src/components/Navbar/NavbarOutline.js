@@ -1,7 +1,6 @@
 import React from 'react';
-import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./Navbar";
 import './NavbarOutline.css';
-
 
 function NavbarOutline() {
   return (
