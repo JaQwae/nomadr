@@ -19,6 +19,7 @@ import Profile from './pages/Profile'
 import Visa from './components/Pages/Visa';
 import LanguagePractice from './components/Pages/Language Practice';
 import './App.css';
+import Visas from './NomadVisas/index';
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
@@ -53,6 +54,8 @@ function App() {
         {/* <Login /> */}
         
      <Profile />
+
+     <Visas/>
        
         <div className="container">
           <Routes>
