@@ -7,6 +7,8 @@ function Home() {
         
       <h1>Cool slogan</h1>
      
+     
+
       <div class = "row">
         <div class = "column">
       <img src = "https://i.natgeofe.com/n/6c02ad5a-977b-4f12-b9c0-02ffb0736e07/metropolitan-cathedral-zocalo-mexico-city_16x9.JPG " alt= "Mexico"></img>
@@ -31,6 +33,12 @@ function Home() {
     <img src = "https://www.kids-world-travel-guide.com/images/santiagodechile-2.jpg" alt = "Chili"></img>
     <img src = "https://a.cdn-hotels.com/gdcs/production159/d204/01ae3fa0-c55c-11e8-9739-0242ac110006.jpg" alt = "Canada"></img>
     
+    </div>
+    <div class = " card  loginForm">
+      <input class= "username"></input>
+       
+      <input class = "password"></input><br></br>
+      <button class = "login">login</button><br></br>
     </div>
     </div>
     </div>
