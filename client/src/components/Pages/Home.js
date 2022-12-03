@@ -34,7 +34,7 @@ function Home() {
     <img src = "https://a.cdn-hotels.com/gdcs/production159/d204/01ae3fa0-c55c-11e8-9739-0242ac110006.jpg" alt = "Canada"></img>
     
     </div>
-    <div class = " card  loginForm">
+    <div class = " card loginForm">
       <input class= "username"></input>
        
       <input class = "password"></input><br></br>
