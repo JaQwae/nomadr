@@ -1,9 +1,13 @@
 import React from 'react'
+import Visas from '../../NomadVisas/index';``
+
+
 
  function Visa() {
   return (
     <div class = "Visa">
       <h1> Country Visa Requirements!</h1>
+      country = {country ?.data}
       <div class = "Program">
         Visa Program
       </div>
