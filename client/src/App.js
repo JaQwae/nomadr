@@ -16,13 +16,13 @@ import Home from "./components/Pages/Home";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Profile from './pages/Profile'
-import Visa from './components/Pages/Visa';
+import Visa from './components/Pages/NomadVisas';
 import LanguagePractice from './components/Pages/Language Practice';
 import './App.css';
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
-  uri: "/graphql",
+  uri: "http://localhost:3001/graphql",
 });
 
 // Construct request middleware that will attach the JWT token to every request as an `authorization` header
@@ -46,14 +46,14 @@ const client = new ApolloClient({
 
 function App() {
   return (
-     <ApolloProvider client={client}>
+    <ApolloProvider client={client}>
     <Router>
     <div className="flex-column justify-flex-start min-100-vh">
         <NavbarOutline />
         {/* <Login /> */}
         
-     <Profile />
-       
+    <Profile />
+      
         <div className="container">
           <Routes>
               <Route 
