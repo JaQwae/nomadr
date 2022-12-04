@@ -1,20 +1,17 @@
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import {QUERY_COUNTRY} from '../../utils/queries';
-import {QUERY_INCOME} from '../../utils/queries';
+// import {QUERY_INCOME} from '../../utils/queries';
 import { useQuery } from '@apollo/client';
 
 
 const Visas = () => {
   const  {data} = useQuery(QUERY_COUNTRY);
-  const {datas} = useQuery(QUERY_INCOME);
+  // const {datas} = useQuery(QUERY_INCOME);
 
-  if (data) {
-    console.log(data)
-  }
   // convert to use state
   const country = data?.Country || [];
-  const income = datas?.Income || []
+  // const income = datas?.Income || []
 
   const location = useLocation();
   const navigate = useNavigate();
@@ -23,7 +20,7 @@ const Visas = () => {
     <div className="w-100 mt-auto bg-secondary p-4">
       <div className="container text-center mb-5">
         country = {country}
-        income  = {income}
+        {/* income  = {income} */}
       {}
         {location.pathname !== '/' && (
           <button
