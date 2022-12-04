@@ -9,20 +9,6 @@ import { setContext } from "@apollo/client/link/context";
 import PageNavigation from './components/NewNavbar/PageNavigation';
 import './App.css';
 
-// Will not need once Navbar is style (DELETE after referencing)
-// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import NavbarOutline from "./components/Navbar/Navbar";
-// import FooterContainer from "./components/containers/footer";
-// import PlanTrip from "./PlanTrip"
-//import LanguagePractice from './components/Pages/Language Practice';
-// import Home from "./components/Pages/Home";
-// import Signup from "./pages/Signup";
-// import Login from "./pages/Login";
-// import Profile from './pages/Profile'
-// import Visa from './components/Pages/NomadVisas';
-// import LanguagePractice from './components/Pages/Language Practice';
-
-
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
   uri: "http://localhost:3001/graphql",
@@ -51,47 +37,8 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <PageNavigation/>
-    {/* <Router> */}
-    {/* <div className="flex-column justify-flex-start min-100-vh"> */}
-        {/* <NavbarOutline /> */}
-        {/* <Login /> */}
-        
-    {/* <Profile /> */}
-      
-        {/* <div className="container"> */}
-          {/* <Routes>
-              <Route 
-                path="/"
-                element={<Home />}
-              />
-              <Route
-                path="/visas"
-                element={<Visa />}
-                />
-              <Route 
-                path="/login" 
-                element={<Login />}
-              />
-              <Route 
-                path="/signup" 
-                element={<Signup />}
-              />
-              <Route 
-                path="/me" 
-                element={<Profile />}
-              />
-              <Route 
-                path="/profiles/:username" 
-                element={<Profile />}
-              />
-              </Routes> */}
-          {/* </div> */}
-        {/* </div> */}
-        {/* <footer> */}
-          {/* <FooterContainer /> */}
-        {/* </footer> */}
-      
-    {/* </Router> */}
+      {/* <Login /> */}
+      {/* <Profile /> */}
     </ApolloProvider>
   );
 }
