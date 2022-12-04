@@ -4,10 +4,14 @@ import {QUERY_COUNTRY} from '../../utils/queries';
 import {QUERY_INCOME} from '../../utils/queries';
 import { useQuery } from '@apollo/client';
 
+
 const Visas = () => {
   const  {data} = useQuery(QUERY_COUNTRY);
   const {datas} = useQuery(QUERY_INCOME);
 
+  if (data) {
+    console.log(data)
+  }
   // convert to use state
   const country = data?.Country || [];
   const income = datas?.Income || []
