@@ -6,19 +6,22 @@ import {
   createHttpLink,
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import NavbarOutline from "./components/Navbar/Navbar";
-import FooterContainer from "./components/containers/footer";
+import PageNavigation from './components/NewNavbar/PageNavigation';
+import './App.css';
+
+// Will not need once Navbar is style (DELETE after referencing)
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import NavbarOutline from "./components/Navbar/Navbar";
+// import FooterContainer from "./components/containers/footer";
 // import PlanTrip from "./PlanTrip"
 //import LanguagePractice from './components/Pages/Language Practice';
+// import Home from "./components/Pages/Home";
+// import Signup from "./pages/Signup";
+// import Login from "./pages/Login";
+// import Profile from './pages/Profile'
+// import Visa from './components/Pages/NomadVisas';
+// import LanguagePractice from './components/Pages/Language Practice';
 
-import Home from "./components/Pages/Home";
-import Signup from "./pages/Signup";
-import Login from "./pages/Login";
-import Profile from './pages/Profile'
-import Visa from './components/Pages/NomadVisas';
-import LanguagePractice from './components/Pages/Language Practice';
-import './App.css';
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
@@ -47,15 +50,16 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
-    <Router>
-    <div className="flex-column justify-flex-start min-100-vh">
-        <NavbarOutline />
+      <PageNavigation/>
+    {/* <Router> */}
+    {/* <div className="flex-column justify-flex-start min-100-vh"> */}
+        {/* <NavbarOutline /> */}
         {/* <Login /> */}
         
-    <Profile />
+    {/* <Profile /> */}
       
-        <div className="container">
-          <Routes>
+        {/* <div className="container"> */}
+          {/* <Routes>
               <Route 
                 path="/"
                 element={<Home />}
@@ -80,14 +84,14 @@ function App() {
                 path="/profiles/:username" 
                 element={<Profile />}
               />
-              </Routes>
-          </div>
-          </div>
-          <footer>
-          <FooterContainer />
-        </footer>
+              </Routes> */}
+          {/* </div> */}
+        {/* </div> */}
+        {/* <footer> */}
+          {/* <FooterContainer /> */}
+        {/* </footer> */}
       
-    </Router>
+    {/* </Router> */}
     </ApolloProvider>
   );
 }
