@@ -1,0 +1,36 @@
+.visa-page {
+    background-image: url(https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2022-10/long-embassy-lines-for-indians-returning-home-zz-221003-763eef.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.visa-page-title{
+    padding: 2rem;
+}
+
+.visa-form {
+    margin: auto;
+    width: 40%;
+    border: 15px double green;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.visa-search-box {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.visa-submit-button{
+    width: 20%;
+    margin: auto;
+}
+
+.visa-error-text{
+    text-align: center;
+    color:red;
+    font-size: larger;
+}

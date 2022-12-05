@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import {QUERY_COUNTRY} from '../../utils/queries';
 // import {QUERY_INCOME} from '../../utils/queries';
 import { useQuery } from '@apollo/client';
+import '../Styles/Visa.css'
 
 const Visas = () => {
 
@@ -68,7 +69,7 @@ const Visas = () => {
   //   console.log(data);
   // }
 
-  // DisplayCountryData();
+  DisplayCountryData();
   // DisplayIncomeData();
 
   // const  {data} = useQuery(QUERY_COUNTRY);
@@ -82,25 +83,28 @@ const Visas = () => {
   // const navigate = useNavigate();
 
   return (
-    <div className="w-100 mt-auto bg-secondary p-4">
-      <h1>Visas</h1>
-      <form>
-        <input
-          type="text"
-          placeholder="Search here"
-          onChange={handleChange}
-          onBlur={handleTextBoxClick}
-          onClick = {clearErrorMessage}
-          value={countrySearch} 
-        />
+    <div className="w-100 mt-auto bg-secondary p-4 visa-page">
+      <h1 className='visa-page-title'>Visa Spot</h1>
+      <div >
+        <form className='visa-form'>
+          <input
+            className='visa-search-box'
+            type="text"
+            placeholder="Search here"
+            onChange={handleChange}
+            onBlur={handleTextBoxClick}
+            onClick = {clearErrorMessage}
+            value={countrySearch} 
+          />
 
-      <button type="button" className="submitButton" onClick={handleFormSubmit}>Submit</button>
-                {errorMessage && (
-                    <div>
-                        <p className="error-text">{errorMessage}</p>
-                    </div>
-                )}
-      </form>
+        <button type="button" className="visa-submit-button" onClick={handleFormSubmit}>Search</button>
+                  {errorMessage && (
+                      <div>
+                          <p className="visa-error-text">{errorMessage}</p>
+                      </div>
+                  )}
+        </form>
+      </div>
 
 
 
