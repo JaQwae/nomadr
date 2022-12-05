@@ -6,21 +6,13 @@ import {
   createHttpLink,
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import NavbarOutline from "./components/Navbar/Navbar";
-import FooterContainer from "./components/containers/footer";
-// import PlanTrip from "./PlanTrip"
-//import LanguagePractice from './components/Pages/Language Practice';
-
-import Home from "./pages/Home";
-import Signup from "./pages/Signup";
-import Login from "./pages/Login";
-import Profile from './pages/Profile';
-import Visas from './NomadVisas/index';
+import PageNavigation from './components/NewNavbar/PageNavigation';
+import FooterContainer from './components/containers/footer';
+import './App.css';
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
-  uri: "/graphql",
+  uri: "http://localhost:3001/graphql",
 });
 
 // Construct request middleware that will attach the JWT token to every request as an `authorization` header
@@ -44,43 +36,17 @@ const client = new ApolloClient({
 
 function App() {
   return (
+    <div>
     <ApolloProvider client={client}>
-    <Router>
-    <div className="flex-column justify-flex-start min-100-vh">
-        <NavbarOutline />
-        {/* <Login /> */}
-        <div className="container">
-          <Routes>
-              <Route 
-                path="/"
-                element={<Home />}
-              />
-              <Route
-                path="/visas"
-                element={<Visas />}
-                />
-              <Route 
-                path="/login" 
-                element={<Login />}
-              />
-              <Route 
-                path="/signup" 
-                element={<Signup />}
-              />
-              <Route 
-                path="/me" 
-                element={<Profile />}
-              />
-              <Route 
-                path="/profiles/:username" 
-                element={<Profile />}
-              />
-              </Routes>
-          </div>
-          <FooterContainer />
-        </div>
-    </Router>
+      <PageNavigation/>
+      {/* <Login /> */}
+      {/* <Profile /> */}
+
+      
     </ApolloProvider>
+</div>
+
+    
   );
 }
 

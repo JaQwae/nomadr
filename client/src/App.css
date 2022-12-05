@@ -1,3 +1,6 @@
+body{
+  background: url({Home});
+}
 .App {
   text-align: center;
 }
@@ -56,7 +59,7 @@ body{
     position: relative;
     border-radius: .25rem;
     box-shadow: 0 0 5px 2px black;
-    background-color: white;
+    background-color: lightslategray;
     transform-style: preserve-3d;
     height: 150px;
     width: 150px;
@@ -64,6 +67,7 @@ body{
     transition: 150ms;
     transform: perspective(1000px) rotateY(var(--rotate-y, 0));
     margin-bottom: 15px;
+    color: pink;
     
 }
 .card:hover{
@@ -88,6 +92,9 @@ body{
   display: flex;
   flex-wrap: wrap;
   padding: 4px 4px;
+ position: absolute;
+  overflow-y: scroll;
+  vertical-align: middle;  
 
 
 
@@ -101,8 +108,8 @@ body{
   vertical-align: middle;
   height: 300px;
   width: 350px;
-  
-
+  position: inherit;
+  opacity: 0.2px;
 }
 h1{
   text-align: center;
@@ -112,4 +119,76 @@ h1{
   width:100%;
   height:100%;
   margin: auto;
+  overflow-y: scroll;
+  z-index: -100;
 }
+.Home img{
+opacity: 0.5;
+
+}
+.Home .card{
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  z-index: 100;
+  align-self: center;
+  justify-self: center;
+  background-color: white;
+}
+.Program{
+  background: linear-gradient(90deg, #3a5c83 0%, #769ABE 100%);
+  height: 20px;
+  width: 100%;
+  align-items: left;
+  color: white;
+  margin: 3px;
+}
+.Length{
+  background: linear-gradient(90deg, #3a5c83 0%, #769ABE 100%);
+  height: 20px;
+  width: 100%;
+  align-items: left;
+  color: white;
+  margin: 3px;
+}
+.MonthlyIncome{
+  background: linear-gradient(90deg, #3a5c83 0%, #769ABE 100%);
+  height: 20px;
+  width: 100%;
+  align-items: left;
+  color: white;
+  margin: 3px;
+}
+.Taxation{
+  background: linear-gradient(90deg, #3a5c83 0%, #769ABE 100%);
+  height: 20px;
+  width: 100%;
+  align-items: left;
+  color: white;
+  margin: 3px;
+}
+.Fees{
+  background: linear-gradient(90deg, #3a5c83 0%, #769ABE 100%);
+  height: 20px;
+  width: 100%;
+  align-items: left;
+  color: white;
+  margin: 3px;
+}
+.Clearance{
+  background: linear-gradient(90deg, #3a5c83 0%, #769ABE 100%);
+  height: 20px;
+  width: 100%;
+  align-items: left;
+  color: white;
+  margin: 3px;
+}
+.Insurance{
+  background: linear-gradient(90deg, #3a5c83 0%, #769ABE 100%);
+  height: 20px;
+  width: 100%;
+  align-items: left;
+  color: white;
+  margin: 3px;
+}
+

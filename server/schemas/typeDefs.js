@@ -23,7 +23,7 @@ const typeDefs = gql`
     username: String
     email: String
     password: String
-    thoughts: [Thought]!
+    thoughts: [String]
   }
 
   type Auth {
@@ -39,8 +39,8 @@ const typeDefs = gql`
   }
 
   type Mutation {
-    createMatchup(tech1: String!, tech2: String!): Matchup
-    createVote(_id: String!, techNum: Int!): Matchup
+    createMatchup(tech1: String!, tech2: String!): Auth
+    createVote(_id: String!, techNum: Int!): Auth
     addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
   }

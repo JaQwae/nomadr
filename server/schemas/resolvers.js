@@ -1,8 +1,12 @@
 const { Country } = require("../models");
 const { AuthenticationError } = require("apollo-server-express");
 const { User } = require("../models");
+<<<<<<< HEAD
 const { signToken } = require("../utils/auth");
 const stripe = require('stripe')('sk_test_Gx4mWEgHtCMr4DYMUIqfIrsz');
+=======
+//const { signToken } = require("../utils/auth");
+>>>>>>> 533d9eab73d5057477e78ba75f84e263e32b1350
 
 const resolvers = {
   Query: {
