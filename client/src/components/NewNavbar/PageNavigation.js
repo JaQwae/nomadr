@@ -4,6 +4,7 @@ import Home from '../Pages/Home';
 import Plan from '../Pages/MySavedTrips'
 import Visa from '../Pages/NomadVisas';
 import LanguagePractice from '../Pages/Language Practice';
+import "../NewNavbar/NewNav.css"
 // import Footer from '../containers/footer';
 
 export default function PageNavigation () {

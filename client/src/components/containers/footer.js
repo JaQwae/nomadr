@@ -8,6 +8,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
     const navigate = useNavigate();
     return (
         <Footer>
+            here
             {/* <Footer.Wrapper> */}
             <Footer.Row>
                 
