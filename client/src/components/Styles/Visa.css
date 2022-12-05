@@ -6,12 +6,14 @@
 
 .visa-page-title{
     padding: 2rem;
+    color: #e8aa9b 
 }
 
 .visa-form {
+    background: linear-gradient(90deg, rgba(58,92,131,0.8) 0%, rgba(118,154,190,0.8) 100%);
     margin: auto;
     width: 40%;
-    border: 15px double green;
+    border: 15px double black;
     padding: 4rem;
     display: flex;
     flex-direction: column;
@@ -22,15 +24,28 @@
     margin: auto;
     margin-bottom: 2rem;
     padding: 1rem;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
 }
 
 .visa-submit-button{
     width: 20%;
     margin: auto;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+.visa-submit-button:hover{
+    background-color: #e98c4e;
+    color: black;
+    transition: all .4s ease-in-out;
+    transform: scale(1.1);
 }
 
 .visa-error-text{
     text-align: center;
-    color:red;
+    color:#e8aa9b;
     font-size: larger;
 }

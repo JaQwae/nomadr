@@ -90,7 +90,7 @@ const Visas = () => {
           <input
             className='visa-search-box'
             type="text"
-            placeholder="Search here"
+            placeholder="Enter A Country"
             onChange={handleChange}
             onBlur={handleTextBoxClick}
             onClick = {clearErrorMessage}
