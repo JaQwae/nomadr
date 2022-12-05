@@ -1,13 +1,14 @@
 import React from 'react';
-import { FooterContainer} from './containers/footer';
-import Home from './Pages/Home';
+import  {FooterContainer} from './containers/footer';
+
 
 function App() {
   return (
-   <>
-    <FooterContainer />
+   <div>
+     <FooterContainer/>
+   
   
-   </>
+   </div>
   );
 }
 
