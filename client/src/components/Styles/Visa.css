@@ -38,7 +38,7 @@
 }
 
 .visa-submit-button:hover{
-    background-color: #e98c4e;
+    background-color:#e8aa9b; 
     color: black;
     transition: all .4s ease-in-out;
     transform: scale(1.1);
@@ -46,6 +46,6 @@
 
 .visa-error-text{
     text-align: center;
-    color:#e8aa9b;
+    color:#e98c4e;
     font-size: larger;
 }
