@@ -3,7 +3,7 @@ import Icon from '../icons'
 
 export const MenuItems = [
     {
-        title: 'Plan a Trip',
+        title: 'Home',
         url: '/Home',
         cName: 'nav-links',
         icon: <Icon className="fa-solid fa-house"></Icon>
@@ -20,6 +20,11 @@ export const MenuItems = [
         cName: 'nav-links',
         icon: <Icon className="fa-solid fa-passport"></Icon>
 
+    },
+    {
+        title: 'Digital Nomad Visas',
+        url: '/digitalnomadvisas',
+        cName: 'nav-links',
     },
     {
         title: 'Language Practice',

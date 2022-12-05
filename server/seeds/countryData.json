@@ -5,7 +5,7 @@
         "length": "12 months, renewable",
         "monthlyIncomeRequirement": "$3,000+",
         "taxation": "exempt from income tax",
-        "visa fee": "$100",
+        "visaFee": "$100",
         "policeClearance": "required",
         "healthInsurance": "required"
     },
@@ -25,7 +25,7 @@
         "length": "24 months, max stay 6 months/year, renewable",
         "monthlyIncomeRequirement": "$665.52+",
         "taxation": "standard taxation after 6 months",
-        "visa fee": "Free",
+        "visaFee": "Free",
         "policeClearance": "not required",
         "healthInsurance": "required"
     },
@@ -35,7 +35,7 @@
         "length": "12 Months",
         "monthlyIncomeRequirement": "$2,918",
         "taxation": "TBC",
-        "visa fee": "TBC",
+        "visaFee": "TBC",
         "policeClearance": "required",
         "healthInsurance": "required"
     },
@@ -45,7 +45,7 @@
         "length": "12 Months, renewable if over 6 months spent in the country",
         "monthlyIncomeRequirement": "$1,500 or $18,000 in savings",
         "taxation": "standard taxation after 6 months",
-        "visa fee": "Less than $100",
+        "visaFee": "Less than $100",
         "policeClearance": "required",
         "healthInsurance": "required"
     }

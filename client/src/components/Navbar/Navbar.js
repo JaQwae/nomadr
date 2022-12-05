@@ -15,7 +15,7 @@ class Navbar extends Component {
 
 
 
-    render (){
+    render() {
         return (
             <nav className="NavbarItems">
                 <h1 className="navbar-logo"> <img src = {logo} alt = ""></img> </h1>
@@ -27,14 +27,14 @@ class Navbar extends Component {
                 <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
                     {MenuItems.map((item, index) => {
                         return (
-                   
-                    <li key={index}> 
-                      <a className={item.cName} href={item.url}> 
-                       {item.icon}{item.title}
-                      </a> 
-                    </li>
-                    ) 
-                })}
+
+                            <li key={index}>
+                                <a className={item.cName} href={item.url}>
+                                    {item.icon}{item.title}
+                                </a>
+                            </li>
+                        )
+                    })}
                 </ul>
                 <Button>Sign Out</Button>
             </nav>

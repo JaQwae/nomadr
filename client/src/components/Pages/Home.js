@@ -3,14 +3,14 @@ import React from 'react'
 function Home() {
 
   return (
-    <div class = "Home">
+    <div className = "Home">
         
       <h1>Cool slogan</h1>
      
      
 
-      <div class = "row">
-        <div class = "column">
+      <div className = "row">
+        <div className = "column">
       <img src = "https://i.natgeofe.com/n/6c02ad5a-977b-4f12-b9c0-02ffb0736e07/metropolitan-cathedral-zocalo-mexico-city_16x9.JPG " alt= "Mexico"></img>
     <img src = "https://www.state.gov/wp-content/uploads/2018/11/France-1980x1406.jpg" alt ="France"></img>
     <img src = "https://i.natgeofe.com/k/33e48abd-f2e7-4430-b7bf-cc9a18c14cc6/brazil-christ-the-redeemer_2x1.jpg" alt = "Brazil"></img>
@@ -34,11 +34,11 @@ function Home() {
     <img src = "https://a.cdn-hotels.com/gdcs/production159/d204/01ae3fa0-c55c-11e8-9739-0242ac110006.jpg" alt = "Canada"></img>
     
     </div>
-    <div class = " card loginForm">
-      <input class= "username"></input>
+    <div className = " card loginForm">
+      <input className= "username"></input>
        
-      <input class = "password"></input><br></br>
-      <button class = "login">login</button><br></br>
+      <input className = "password"></input><br></br>
+      <button className = "login">login</button><br></br>
     </div>
     </div>
     </div>
