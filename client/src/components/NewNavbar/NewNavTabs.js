@@ -8,8 +8,9 @@ function NavTabs({ currentPage, handlePageChange }) {
     return (
         <nav className="NavbarItems">
             <h1 className="navbar-logo"> <img src = {logo} alt = ""></img> </h1>
-            
             {/* <Mobile /> */}
+
+            
 
         <ul className='nav-menu active  nav-menu'>
             <li className="nav-links">

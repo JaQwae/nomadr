@@ -7,6 +7,7 @@ import {
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
 import PageNavigation from './components/NewNavbar/PageNavigation';
+import FooterContainer from './components/containers/footer';
 import './App.css';
 
 // Construct our main GraphQL API endpoint
@@ -35,11 +36,17 @@ const client = new ApolloClient({
 
 function App() {
   return (
+    <div>
     <ApolloProvider client={client}>
       <PageNavigation/>
       {/* <Login /> */}
       {/* <Profile /> */}
+
+      
     </ApolloProvider>
+</div>
+
+    
   );
 }
 
