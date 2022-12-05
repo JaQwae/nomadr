@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import NavTabs from './NewNavTabs';
 import Home from '../Pages/Home';
-import Plan from '../Pages/PlanaTrip'
+import Plan from '../Pages/MySavedTrips'
 import Visa from '../Pages/NomadVisas';
 import LanguagePractice from '../Pages/Language Practice';
 // import Footer from '../containers/footer';

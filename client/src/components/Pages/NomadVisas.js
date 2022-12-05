@@ -1,19 +1,75 @@
 import React, {useState} from 'react';
 // import { useLocation, useNavigate } from 'react-router-dom';
-// import {QUERY_COUNTRY} from '../../utils/queries';
+import {QUERY_COUNTRY} from '../../utils/queries';
 // import {QUERY_INCOME} from '../../utils/queries';
-// import { useQuery } from '@apollo/client';
+import { useQuery } from '@apollo/client';
 
 const Visas = () => {
-  // const [country, setCountry] = useState('');
 
-  // const handleInputChange = (e) => {
-  //   // Getting the value and name of the input which triggered the change
-  //   const { target } = e;
-  //   const inputValue = target.value;
+  const [countrySearch, setCountrySearch] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
-  //   setCountry(inputValue)
-  // };
+  const handleChange = (e) => {
+    e.preventDefault();
+    setCountrySearch(e.target.value);
+  };
+
+  const handleTextBoxClick = (e) => {
+    if (!countrySearch) {
+      setErrorMessage('Please enter a location')
+      return;
+    }
+  }
+
+  const clearErrorMessage = (e) => {
+    setErrorMessage('');
+    return
+  }
+
+  const handleFormSubmit = (e) => {
+    if (!countrySearch) {
+      setErrorMessage('Please enter a location')
+      return;
+    }
+
+    alert('Search will go to next step')
+  }
+
+
+
+
+  function DisplayCountryData() {
+    const { data, loading, error } = useQuery(QUERY_COUNTRY);
+
+    if (loading) {
+      return <h3> One Sec! Fetching Data..</h3>
+    };
+
+    if (error) {
+      console.log('Could not find' + error)
+    };
+    
+    if (data) {
+      console.log(data);
+    }
+  }
+
+  // function DisplayIncomeData() {
+  //   const { data, loading, error } = useQuery(QUERY_INCOME);
+
+  //   if (loading) {
+  //     return <h3> One Sec! Fetching Data..</h3>
+  //   };
+
+  //   if (error) {
+  //     console.log('Could not find' + error)
+  //   };
+
+  //   console.log(data);
+  // }
+
+  // DisplayCountryData();
+  // DisplayIncomeData();
 
   // const  {data} = useQuery(QUERY_COUNTRY);
   // const {datas} = useQuery(QUERY_INCOME);
@@ -27,7 +83,28 @@ const Visas = () => {
 
   return (
     <div className="w-100 mt-auto bg-secondary p-4">
-      <h1>Visas Page</h1>
+      <h1>Visas</h1>
+      <form>
+        <input
+          type="text"
+          placeholder="Search here"
+          onChange={handleChange}
+          onBlur={handleTextBoxClick}
+          onClick = {clearErrorMessage}
+          value={countrySearch} 
+        />
+
+      <button type="button" className="submitButton" onClick={handleFormSubmit}>Submit</button>
+                {errorMessage && (
+                    <div>
+                        <p className="error-text">{errorMessage}</p>
+                    </div>
+                )}
+      </form>
+
+
+
+
       {/* <div className="container text-center mb-5">
         country = {country}
         {/* income  = {income} */}
