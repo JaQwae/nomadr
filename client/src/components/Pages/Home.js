@@ -1,6 +1,6 @@
 import React from 'react';
 import Login from './Login';
-import Signup from './Signup';
+import Register from './Register';
 function Home() {
 
   return (
@@ -49,7 +49,7 @@ function Home() {
     <div className = "grid-item">
       <div class = "loginformcontainer">
 <Login/>
-<Signup/>
+<Register/>
       
    </div>
    </div>
