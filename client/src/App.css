@@ -145,6 +145,17 @@ opacity: 0.5;
 
 
 }
+.flashcards{
+  margin:10px;
+  align-self: center;
+  justify-self: center;
+}
+.flashcards h1{
+  margin:10px;
+  align-self: center;
+  justify-self: center;
+  margin:20px;
+}
 
 .loginformcontainer{
   background-color: white;
@@ -155,9 +166,6 @@ opacity: 0.5;
   justify-items: center;
   place-self:center;
   justify-content: center;
-}
-.loginformcontainer input button{
-  justify-self: center;
 }
 .Program{
   background: linear-gradient(90deg, #3a5c83 0%, #769ABE 100%);
