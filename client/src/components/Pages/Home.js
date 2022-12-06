@@ -1,5 +1,6 @@
-import React from 'react'
-
+import React from 'react';
+import Login from './Login';
+import Signup from './Signup';
 function Home() {
 
   return (
@@ -49,21 +50,15 @@ function Home() {
       
     <div className = "grid-item">
       <div class = "loginformcontainer">
-        <div class = "loginForm">
-     <input className= "username"></input>
+<Login/>
+<Signup/>
       
-     <input className = "password"></input><br></br>
-     <button className = "login">login</button><br></br>
-   </div>
    </div>
    </div>
   
     
    
     </div>
-    <div class = "logincontainer">
-   
-   </div>
    </div>
   )
 }
