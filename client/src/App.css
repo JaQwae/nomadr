@@ -232,4 +232,13 @@ opacity: 0.5;
   color: white;
   margin: 3px;
 }
-
+.login-form{
+  text-align: center;
+}
+.link-btn{
+  justify-content: center;
+}
+.register-form{
+  justify-content: center;
+  text-align: center;
+}
