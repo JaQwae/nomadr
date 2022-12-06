@@ -15,8 +15,8 @@ class Mobile extends Component {
                 
                 <div className="menu-icon" onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
-
                 </div>
+                
         )
               
 }
