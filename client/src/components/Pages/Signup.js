@@ -1,89 +1,174 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { useMutation } from '@apollo/client';
-import { ADD_USER } from '../utils/mutations';
-import Auth from '../utils/auth';
+// import { Link } from "react-router-dom";
+// import { useMutation } from '@apollo/client';
+// import Auth from '../utils/auth';
+// import { addUser } from '../../../server/schemas/resolvers';
+import {
+    Button,
+    Form,
+    Input,
+} from 'antd';
+
+const formItemLayout = {
+    labelCol: {
+        xs: {
+            span: 24,
+        },
+        sm: {
+            span: 8,
+        },
+    },
+    wrapperCol: {
+        xs: {
+            span: 24,
+        },
+        sm: {
+            span: 16,
+        },
+    },
+};
+const tailFormItemLayout = {
+    wrapperCol: {
+        xs: {
+            span: 24,
+            offset: 0,
+        },
+        sm: {
+            span: 16,
+            offset: 8,
+        },
+    },
+};
 const Signup = () => {
-  const [formState, setFormState] = useState({
-    username: '',
-    email: '',
-    password: '',
-  });
-  const [addUser, { error, data }] = useMutation(ADD_USER);
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setFormState({
-      ...formState,
-      [name]: value,
-    });
+  const [form] = Form.useForm();
+  const onSubmit = async (values) => {
+    console.log('Received values of form: ', values);
   };
-  const handleFormSubmit = async (event) => {
-    event.preventDefault();
-    console.log(formState);
-    try {
-      const { data } = await addUser({
-        variables: { ...formState },
-      });
-      Auth.login(data.addUser.token);
-    } catch (e) {
-      console.error(e);
-    }
-  };
-  return (
-    <main className="flex-row justify-center mb-4">
-      <div className="col-12 col-lg-10">
-        <div className="card">
-          <h4 className="card-header bg-dark text-light p-2">Sign Up</h4>
-          <div className="card-body">
-            {data ? (
-              <p>
-                Success! You may now head{' '}
-                <Link to="/">back to the homepage.</Link>
-              </p>
-            ) : (
-              <form onSubmit={handleFormSubmit}>
-                <input
-                  className="form-input"
-                  placeholder="Your username"
-                  name="username"
-                  type="text"
-                  value={formState.name}
-                  onChange={handleChange}
-                />
-                <input
-                  className="form-input"
-                  placeholder="Your email"
-                  name="email"
-                  type="email"
-                  value={formState.email}
-                  onChange={handleChange}
-                />
-                <input
-                  className="form-input"
-                  placeholder="******"
-                  name="password"
-                  type="password"
-                  value={formState.password}
-                  onChange={handleChange}
-                />
-                <button
-                  className="btn btn-block btn-primary"
-                  style={{ cursor: 'pointer' }}
-                  type="submit"
-                >
-                  Submit
-                </button>
-              </form>
-            )}
-            {error && (
-              <div className="my-3 p-3 bg-danger text-white">
-                {error.message}
-              </div>
-            )}
-          </div>
-        </div>
-      </div>
-    </main>
-  );
+
+// const Signup = () => {
+//     const [form] = Form.useForm();
+//     const [formState, setFormState] = useState({ email: '', password: '' });
+    // const [addUser] = useMutation(ADD_USER);
+
+    // const handleFormSubmit = async (event) => {
+    //     event.preventDefault();
+    //     //   const mutationResponse = await addUser({
+    //     //     variables: {
+    //     //       email: formState.email,
+    //     //       password: formState.password,
+    //     //       firstName: formState.firstName,
+    //     //       lastName: formState.lastName,
+    //     //     },
+    //     //   });
+    //     //   const token = mutationResponse.data.addUser.token;
+    //     //   Auth.login(token);
+    // };
+
+    // const handleChange = (event) => {
+    //     const { name, value } = event.target;
+    //     setFormState({
+    //         ...formState,
+    //         [name]: value,
+    //     });
+    // };
+
+    return (
+        <Form
+            {...formItemLayout}
+            form={form}
+            name="register"
+            onSubmit={onSubmit}
+            scrollToFirstError
+        >
+
+            <Form.Item
+                name="firstName"
+                label="First Name"
+                rules={[
+                    {
+                        type: 'array',
+                        required: true,
+                        message: 'Please enter your first name!',
+                    },
+                ]}
+            >
+                <Input style={{ width: '70%' }}/>
+            </Form.Item>
+
+            <Form.Item
+                name="lastName"
+                label="Last Name"
+                rules={[
+                    {
+                        type: 'array',
+                        required: true,
+                        message: 'Please enter your last name!',
+                    },
+                ]}
+            >
+                <Input style={{ width: '70%' }}/>
+            </Form.Item>
+
+            <Form.Item
+                name="email"
+                label="E-mail"
+                rules={[
+                    {
+                        type: 'email',
+                        message: 'The input is not valid E-mail!',
+                    },
+                    {
+                        required: true,
+                        message: 'Please input your E-mail!',
+                    },
+                ]}
+            >
+                <Input style={{ width: '70%' }}/>
+            </Form.Item>
+
+            <Form.Item
+                name="password"
+                label="Password"
+                rules={[
+                    {
+                        required: true,
+                        message: 'Please input your password!',
+                    },
+                ]}
+                hasFeedback
+            >
+                <Input.Password style={{ width: '70%' }}/>
+            </Form.Item>
+
+            <Form.Item
+                name="confirm"
+                label="Confirm Password"
+                dependencies={['password']}
+                hasFeedback
+                rules={[
+                    {
+                        required: true,
+                        message: 'Please confirm your password!',
+                    },
+                    ({ getFieldValue }) => ({
+                        validator(_, value) {
+                            if (!value || getFieldValue('password') === value) {
+                                return Promise.resolve();
+                            }
+                            return Promise.reject(new Error('The two passwords that you entered do not match!'));
+                        },
+                    }),
+                ]}
+            >
+                <Input.Password style={{ width: '70%' }}/>
+            </Form.Item>
+
+            <Form.Item {...tailFormItemLayout}>
+                <Button type="primary" htmlType="submit" className='login-form-button'>
+                    Register
+                </Button>
+            </Form.Item>
+        </Form>
+    );
 };
 export default Signup;

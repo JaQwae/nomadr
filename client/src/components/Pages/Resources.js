@@ -1,11 +1,11 @@
 import React from 'react'
 
-function MySavedTrips() {
+function Resources() {
     return(
-        <div className = 'MySavedTrips'>
+        <div className = 'Resources'>
             <h1>Switch successful</h1>
         </div>
     )
 }
 
-export default MySavedTrips;
+export default Resources;

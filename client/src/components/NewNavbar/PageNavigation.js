@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import NavTabs from './NewNavTabs';
 import Home from '../Pages/Home';
-import Plan from '../Pages/MySavedTrips'
+import Resources from '../Pages/Resources'
 import Visa from '../Pages/NomadVisas';
 import LanguagePractice from '../Pages/Language Practice';
 import "../NewNavbar/NewNav.css"
@@ -20,7 +20,7 @@ export default function PageNavigation () {
         if (currentPage === 'Language Practice') {
             return <LanguagePractice />;
         }
-        return <Plan />;
+        return <Resources />;
     };
     
     const handlePageChange = (page) => setCurrentPage(page);
