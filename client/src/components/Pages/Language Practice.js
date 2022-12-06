@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import {frenchList} from '../LanguageCards/frenchDB';
 import{spanishList} from '../LanguageCards/spanishDB';
 import {portugueseList} from '../LanguageCards/portugueseDB';
+import { georgianList } from '../LanguageCards/georgianDB';
 import FlashcardList from '../LanguageCards/FlashcardList';
 
 function LanguagePractice() {
@@ -9,6 +10,7 @@ function LanguagePractice() {
     const [spanishcards] = useState(spanishList)
     const [frenchcards] = useState(frenchList)
     const [portuguesecards] = useState(portugueseList)
+    const [georgiancards] = useState(georgianList)
 
    
   return (
@@ -32,6 +34,11 @@ function LanguagePractice() {
   <h2>Portuguese</h2>
   
       <FlashcardList flashcards = {portuguesecards}/>
+</div>
+<div class = 'georgian'>
+  <h2>Georgian</h2>
+  
+      <FlashcardList flashcards = {georgiancards}/>
 </div>
     </div>
   )
