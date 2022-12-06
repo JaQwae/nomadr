@@ -132,6 +132,15 @@ body{
 h1{
   text-align: center;
   margin: 10px;
+  color: darkblue;
+}
+h2{
+  color: darkblue;
+  text-align: center;
+  margin:10px;
+}
+.Links{
+  text-align: center;
 }
 .Home{
   width:100%;
@@ -223,4 +232,13 @@ opacity: 0.5;
   color: white;
   margin: 3px;
 }
-
+.login-form{
+  text-align: center;
+}
+.link-btn{
+  justify-content: center;
+}
+.register-form{
+  justify-content: center;
+  text-align: center;
+}
