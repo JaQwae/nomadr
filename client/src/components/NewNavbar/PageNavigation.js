@@ -11,8 +11,8 @@ export default function PageNavigation () {
     const [currentPage, setCurrentPage] = useState('Home');
 
     const renderPage = () => {
-        if (currentPage === 'Home') {
-            return <Home />;
+        if (currentPage === 'Resources') {
+            return <Resources />;
         }
         if (currentPage === 'Visa') {
             return <Visa />;
@@ -20,7 +20,7 @@ export default function PageNavigation () {
         if (currentPage === 'Language Practice') {
             return <LanguagePractice />;
         }
-        return <Resources />;
+        return <Home />;
     };
     
     const handlePageChange = (page) => setCurrentPage(page);
