@@ -5,7 +5,7 @@ import Resources from '../Pages/Resources'
 import Visa from '../Pages/NomadVisas';
 import LanguagePractice from '../Pages/Language Practice';
 import "../NewNavbar/NewNav.css"
-// import Footer from '../containers/footer';
+import FooterContainer from '../containers/footer';
 
 export default function PageNavigation () {
     const [currentPage, setCurrentPage] = useState('Home');
@@ -32,7 +32,7 @@ export default function PageNavigation () {
                 {renderPage()}
             </div>
             <div>
-                {/* <FooterContainer /> */}
+                <FooterContainer />
             </div>
         </div>
     );
