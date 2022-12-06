@@ -10,7 +10,7 @@ function LanguagePractice() {
    
   return (
    
-<div>
+<div class = "flashcards">
 <h1>Lets Practice the Language!</h1>
       <FlashcardList flashcards = {cards}/>
 
