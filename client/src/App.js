@@ -41,10 +41,11 @@ function App() {
       <PageNavigation/>
       {/* <Login /> */}
       {/* <Profile /> */}
-
       
     </ApolloProvider>
+
 </div>
+
 
     
   );

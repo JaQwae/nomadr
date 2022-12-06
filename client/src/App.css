@@ -88,52 +88,107 @@ body{
     transform: rotateY(180deg);
   
 }
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 4px 4px;
- position: absolute;
-  overflow-y: scroll;
-  vertical-align: middle;  
 
+.grid-container{
+  width:100%;
+  height:100%;
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  margin:2%;
+  position:absolute;
 
 
 }
 
-/* Create two equal columns that sits next to each other */
 
-
-.column img {
-  margin: 8px;
-  vertical-align: middle;
+.grid-item{
+  width: 300px;
   height: 300px;
-  width: 350px;
-  position: inherit;
-  opacity: 0.2px;
+  display:flex;
+  justify-content: center;
+  margin: 10px;
+  
 }
+
+.grid-item img {
+ 
+ height:400x;
+ width:360px;
+
+}
+
+.grid-item:nth-of-type(13){
+  grid-column:2 / 4;
+  grid-row: 1 / 3;
+  justify-self: center;
+  align-self:center;
+  opacity: 0.9;
+  position:absolute;
+  text-align: center;
+  font-size: 50px;
+  color: darkblue;
+  width:fit-content;
+}
+
 h1{
   text-align: center;
   margin: 10px;
+  color: darkblue;
+}
+h2{
+  color: darkblue;
+  text-align: center;
+  margin:10px;
+}
+.Links{
+  text-align: center;
 }
 .Home{
   width:100%;
   height:100%;
-  margin: auto;
-  overflow-y: scroll;
-  z-index: -100;
+  position:absolute;
+ 
+  
 }
 .Home img{
 opacity: 0.5;
 
+
 }
-.Home .card{
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  z-index: 100;
+.flashcards{
+  margin:10px;
   align-self: center;
   justify-self: center;
+}
+.flashcards h1{
+  margin:10px;
+  align-self: center;
+  justify-self: center;
+  margin:20px;
+}
+
+.loginformcontainer{
   background-color: white;
+  height:200px;
+  width:500px;
+  position:absolute;
+  align-items: center;
+  justify-items: center;
+  place-self:center;
+  justify-content: center;
+}
+
+.loginformcontainer1{
+  background-color: white;
+  height:300px;
+  width:500px;
+  position:absolute;
+  align-items: center;
+  justify-items: center;
+  place-self:center;
+  justify-content: center;
+  font-size: large;
 }
 .Program{
   background: linear-gradient(90deg, #3a5c83 0%, #769ABE 100%);
@@ -191,4 +246,54 @@ opacity: 0.5;
   color: white;
   margin: 3px;
 }
+.login-form{
+  text-align: center;
+}
+.link-btn{
+  justify-content: center;
+}
+.register-form{
+  justify-content: center;
+  text-align: center;
+}
 
+.grid-container1{
+  width:100%;
+  height:100%;
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  margin:2%;
+  position:absolute;
+
+
+}
+
+.grid-item1{
+  width: 300px;
+  height: 300px;
+  display:flex;
+  justify-content: center;
+  margin: 10px;
+  
+}
+
+.grid-item1 img {
+ 
+ height:400x;
+ width:360px;
+
+}
+
+.grid-item1:nth-of-type(13){
+  grid-column:2 / 4;
+  grid-row: 1 / 3;
+  justify-self: center;
+  align-self:center;
+  opacity: 0.9;
+  position:absolute;
+  text-align: center;
+  font-size: 50px;
+  color: darkblue;
+  width:fit-content;
+}

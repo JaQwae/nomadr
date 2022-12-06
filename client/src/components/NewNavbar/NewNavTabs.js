@@ -11,11 +11,12 @@ function NavTabs({ currentPage, handlePageChange }) {
             {/* <Mobile /> */}
 
             
-
+           
         <ul className='nav-menu active  nav-menu'>
             <li className="nav-links">
+           
                 <a 
-                    href = "#home"
+                    href = "#Home"
                     onClick = {() => handlePageChange ('Home')}
                     className = {currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
                 > <Icon className="fa-solid fa-house"></Icon>
@@ -42,19 +43,36 @@ function NavTabs({ currentPage, handlePageChange }) {
             </li>
             <li className="nav-links">
                 <a
-                    href="#MySavedTrips"
+                    href="#Resources"
                     onClick={() => handlePageChange('MySavedTrips')}
                     className={currentPage === 'MySavedTrips' ? 'nav-link active' : 'nav-link'}
                 > <Icon className="fa-solid fa-person-walking-luggage"></Icon>
-                    MySavedTrips
+                    Resources
                 </a>
             </li>
-        </ul>
+            <li className='nav-button'>
+            <Button
+        href="#Register"
+        onClick={() => handlePageChange('Register')}
+        className={currentPage === 'Register' ? 'nav-link active' : 'nav-link'}
+        >Register</Button>
+            </li>
+            <li className='nav-button'>
+            <Button
+        href="#Login"
+        onClick={() => handlePageChange('Login')}
+        className={currentPage === 'Login' ? 'nav-link active' : 'nav-link'}
+        >Sign In</Button>
+            </li>
+          
+     <li className='nav-button'>
         <Button
-        href="#SignOut"
+        href="#Home"
         onClick={() => handlePageChange('SignOut')}
         className={currentPage === 'SignOut' ? 'nav-link active' : 'nav-links-mobile'}
         >Sign Out</Button>
+        </li>
+        </ul>
         </nav>
     );
 }

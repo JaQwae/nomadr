@@ -1,18 +1,20 @@
 import React, { useState } from 'react';
 import NavTabs from './NewNavTabs';
 import Home from '../Pages/Home';
-import Plan from '../Pages/MySavedTrips'
+import Resources from '../Pages/Resources'
 import Visa from '../Pages/NomadVisas';
 import LanguagePractice from '../Pages/Language Practice';
 import "../NewNavbar/NewNav.css"
-// import Footer from '../containers/footer';
+import FooterContainer from '../containers/footer';
+import Login from '../Pages/Login';
+import Register from '../Pages/Register';
 
 export default function PageNavigation () {
     const [currentPage, setCurrentPage] = useState('Home');
 
     const renderPage = () => {
-        if (currentPage === 'Home') {
-            return <Home />;
+        if (currentPage === 'Resources') {
+            return <Resources />;
         }
         if (currentPage === 'Visa') {
             return <Visa />;
@@ -20,7 +22,13 @@ export default function PageNavigation () {
         if (currentPage === 'Language Practice') {
             return <LanguagePractice />;
         }
-        return <Plan />;
+        if (currentPage ==='Login'){
+            return <Login/>
+        }
+        if (currentPage === 'Register'){
+            return<Register/>
+        }
+        return <Home />;
     };
     
     const handlePageChange = (page) => setCurrentPage(page);
@@ -32,7 +40,7 @@ export default function PageNavigation () {
                 {renderPage()}
             </div>
             <div>
-                {/* <FooterContainer /> */}
+                <FooterContainer />
             </div>
         </div>
     );
