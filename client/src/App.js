@@ -7,7 +7,7 @@ import {
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
 import PageNavigation from './components/NewNavbar/PageNavigation';
-import FooterContainer from './components/containers/footer';
+// import FooterContainer from './components/containers/footer';
 import './App.css';
 
 // Construct our main GraphQL API endpoint

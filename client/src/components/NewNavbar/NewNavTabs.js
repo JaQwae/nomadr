@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../../../src/logo.png';
 import {Button} from "../Button"
 import Icon from '../icons'
-import Mobile from "./Mobile"
+// import Mobile from "./Mobile"
 
 function NavTabs({ currentPage, handlePageChange }) {
     return (

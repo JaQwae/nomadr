@@ -32,7 +32,7 @@ const typeDefs = gql`
   }
 
   type Query {
-    country(_id: String): [Country]
+    country(countryName: String): [Country]
     users: [User]
     user(username: String!): User
     me: User
