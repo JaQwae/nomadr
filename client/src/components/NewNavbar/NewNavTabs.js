@@ -44,8 +44,8 @@ function NavTabs({ currentPage, handlePageChange }) {
             <li className="nav-links">
                 <a
                     href="#Resources"
-                    onClick={() => handlePageChange('MySavedTrips')}
-                    className={currentPage === 'MySavedTrips' ? 'nav-link active' : 'nav-link'}
+                    onClick={() => handlePageChange('Resources')}
+                    className={currentPage === 'Resources' ? 'nav-link active' : 'nav-link'}
                 > <Icon className="fa-solid fa-person-walking-luggage"></Icon>
                     Resources
                 </a>
