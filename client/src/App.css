@@ -134,6 +134,14 @@ h1{
   margin: 10px;
   color: darkblue;
 }
+h2{
+  color: darkblue;
+  text-align: center;
+  margin:10px;
+}
+.Links{
+  text-align: center;
+}
 .Home{
   width:100%;
   height:100%;
