@@ -1,28 +1,29 @@
 import React from 'react'
 
- function Visa() {
+ function Visa(props) {
+  console.log(props)
   return (
-    <div class = "Visa">
+    <div className = "Visa">
       <h1> Country Visa Requirements!</h1>
-      <div class = "Program">
+      <div className = "Program">
         Visa Program
       </div>
-      <div class = "Length">
+      <div className = "Length">
         Length of time
       </div>
-      <div class = "MonthlyIncome">
+      <div className = "MonthlyIncome">
         Monthly Income Requirement
       </div>
-      <div class = "Taxation">
+      <div className = "Taxation">
         Taxation Information
       </div>
-      <div class = "Fees">
+      <div className = "Fees">
         Visa Fee's
       </div>
-      <div class = "Clearance">
+      <div className = "Clearance">
         Clearance
       </div>
-      <div class = "Insurance">
+      <div className = "Insurance">
         Health Insurance
       </div>
     </div>
