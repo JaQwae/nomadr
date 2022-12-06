@@ -6,6 +6,7 @@ import Visa from '../Pages/NomadVisas';
 import LanguagePractice from '../Pages/Language Practice';
 import "../NewNavbar/NewNav.css"
 import FooterContainer from '../containers/footer';
+import Login from '../Pages/Login';
 
 export default function PageNavigation () {
     const [currentPage, setCurrentPage] = useState('Home');
@@ -19,6 +20,9 @@ export default function PageNavigation () {
         }
         if (currentPage === 'Language Practice') {
             return <LanguagePractice />;
+        }
+        if (currentPage ==='Login'){
+            return <Login/>
         }
         return <Home />;
     };
