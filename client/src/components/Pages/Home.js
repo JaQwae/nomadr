@@ -48,8 +48,8 @@ function Home() {
       
     <div className = "grid-item">
       <div class = "loginformcontainer">
-<Login/>
-<Register/>
+<a>The place that gets you going.</a><br></br>
+<a>Join Now!</a>
       
    </div>
    </div>
