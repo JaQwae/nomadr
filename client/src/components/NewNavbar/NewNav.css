@@ -100,8 +100,9 @@ width : 150px;
     }
 
     .nav-links:hover {
-        background-color: #fa9875;
+        background-color: darkblue;
         border-radius: 0;
+        color: white;
     }
 
     .navbar-logo {
