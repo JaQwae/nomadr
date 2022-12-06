@@ -5,11 +5,9 @@ function Home() {
 
   return (
     <div className = "Home">
-        
-      <h1>Cool slogan</h1>
+        <br></br>
+      <h1>A New Sky, A New Life.</h1>
      
-     
-
       <div className = "grid-container">
         <div className = "grid-item">
       <img src = "https://i.natgeofe.com/n/6c02ad5a-977b-4f12-b9c0-02ffb0736e07/metropolitan-cathedral-zocalo-mexico-city_16x9.JPG " alt= "Mexico"></img>
