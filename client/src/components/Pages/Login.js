@@ -1,53 +1,25 @@
-import React from 'react';
-import { LockOutlined, UserOutlined } from '@ant-design/icons';
-import { Button, Form, Input } from 'antd';
-const Login = () => {
-  const onFinish = (values) => {
-    console.log('Received values of form: ', values);
-  };
-  return (
-    <Form
-      name="normal_login"
-      className="login-form"
-      initialValues={{
-        remember: true,
-      }}
-      onFinish={onFinish}
-    >
-      <Form.Item
-        name="email"
-        rules={[
-          {
-            required: true,
-            message: 'Please input your Username!',
-          },
-        ]}
-      >
-        <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="Email" />
-      </Form.Item>
-      <Form.Item
-        name="password"
-        rules={[
-          {
-            required: true,
-            message: 'Please input your Password!',
-          },
-        ]}
-      >
-        <Input
-          prefix={<LockOutlined className="site-form-item-icon" />}
-          type="password"
-          placeholder="Password"
-        />
-      </Form.Item>
-     
-      <Form.Item>
-        <Button type="primary" htmlType="submit" className="login-form-button">
-          Log in
-        </Button>
-        Or <a href="/signup">register now!</a>
-      </Form.Item>
-    </Form>
-  );
-};
+import React, { useState } from "react";
+
+ const Login = (props) =>{
+    const [email, setEmail] = useState('');
+    const [pass, setPass] = useState('');
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(email);
+    }
+    return(
+        <div className="auth-form-container">
+            <h2>Login</h2>
+        <form className="login-form" onSubmit={handleSubmit}>
+            <label htmlFor="email">Email</label>
+            <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="example@email.com" id="email" name="email" />
+            <label htmlFor="password">Password</label>
+            <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="*********" id="password" name="password" />
+            <button type="submit">Log In</button>
+        </form>
+        <button className="link-btn" onClick={()=> props.onFormSwitch('register')}>Don't have an account? Register here</button>
+        </div>
+    )
+}
 export default Login;
