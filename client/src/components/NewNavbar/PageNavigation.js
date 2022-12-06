@@ -7,6 +7,7 @@ import LanguagePractice from '../Pages/Language Practice';
 import "../NewNavbar/NewNav.css"
 import FooterContainer from '../containers/footer';
 import Login from '../Pages/Login';
+import Register from '../Pages/Register';
 
 export default function PageNavigation () {
     const [currentPage, setCurrentPage] = useState('Home');
@@ -23,6 +24,9 @@ export default function PageNavigation () {
         }
         if (currentPage ==='Login'){
             return <Login/>
+        }
+        if (currentPage === 'Register'){
+            return<Register/>
         }
         return <Home />;
     };
