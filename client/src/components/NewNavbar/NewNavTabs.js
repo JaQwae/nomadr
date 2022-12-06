@@ -52,11 +52,19 @@ function NavTabs({ currentPage, handlePageChange }) {
             </li>
             <li className='nav-button'>
             <Button
+        href="#Register"
+        onClick={() => handlePageChange('Register')}
+        className={currentPage === 'Register' ? 'nav-link active' : 'nav-link'}
+        >Register</Button>
+            </li>
+            <li className='nav-button'>
+            <Button
         href="#Login"
         onClick={() => handlePageChange('Login')}
         className={currentPage === 'Login' ? 'nav-link active' : 'nav-link'}
         >Sign In</Button>
             </li>
+          
      <li className='nav-button'>
         <Button
         href="#Home"
