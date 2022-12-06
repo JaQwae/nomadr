@@ -124,9 +124,11 @@ body{
   justify-self: center;
   align-self:center;
   opacity: 0.9;
-  border-color: #769ABE;
   position:absolute;
-  border-width: 2px;
+  text-align: center;
+  font-size: 50px;
+  color: darkblue;
+  width:fit-content;
 }
 
 h1{
@@ -168,13 +170,25 @@ opacity: 0.5;
 
 .loginformcontainer{
   background-color: white;
-  height:400px;
-  width:400px;
+  height:200px;
+  width:500px;
   position:absolute;
   align-items: center;
   justify-items: center;
   place-self:center;
   justify-content: center;
+}
+
+.loginformcontainer1{
+  background-color: white;
+  height:300px;
+  width:500px;
+  position:absolute;
+  align-items: center;
+  justify-items: center;
+  place-self:center;
+  justify-content: center;
+  font-size: large;
 }
 .Program{
   background: linear-gradient(90deg, #3a5c83 0%, #769ABE 100%);
@@ -241,4 +255,45 @@ opacity: 0.5;
 .register-form{
   justify-content: center;
   text-align: center;
+}
+
+.grid-container1{
+  width:100%;
+  height:100%;
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  margin:2%;
+  position:absolute;
+
+
+}
+
+.grid-item1{
+  width: 300px;
+  height: 300px;
+  display:flex;
+  justify-content: center;
+  margin: 10px;
+  
+}
+
+.grid-item1 img {
+ 
+ height:400x;
+ width:360px;
+
+}
+
+.grid-item1:nth-of-type(13){
+  grid-column:2 / 4;
+  grid-row: 1 / 3;
+  justify-self: center;
+  align-self:center;
+  opacity: 0.9;
+  position:absolute;
+  text-align: center;
+  font-size: 50px;
+  color: darkblue;
+  width:fit-content;
 }

@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .navbar-logo {
@@ -33,7 +33,7 @@ width : 150px;
 
 .nav-menu {
     display: grid;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(6, auto);
     grid-gap: 10px;
     list-style: none;
     text-align: center;
@@ -66,6 +66,7 @@ width : 150px;
 .menu-icon {
     display: none;
 }
+
 
 @media screen and (max-width: 768px) {
     .NavbarItems{

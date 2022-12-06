@@ -11,9 +11,10 @@ function NavTabs({ currentPage, handlePageChange }) {
             {/* <Mobile /> */}
 
             
-
+           
         <ul className='nav-menu active  nav-menu'>
             <li className="nav-links">
+           
                 <a 
                     href = "#Home"
                     onClick = {() => handlePageChange ('Home')}
@@ -49,12 +50,21 @@ function NavTabs({ currentPage, handlePageChange }) {
                     Resources
                 </a>
             </li>
-        </ul>
+            <li className='nav-button'>
+            <Button
+        href="#Login"
+        onClick={() => handlePageChange('Login')}
+        className={currentPage === 'Login' ? 'nav-link active' : 'nav-link'}
+        >Sign In</Button>
+            </li>
+     <li className='nav-button'>
         <Button
-        href="#SignOut"
+        href="#Home"
         onClick={() => handlePageChange('SignOut')}
         className={currentPage === 'SignOut' ? 'nav-link active' : 'nav-links-mobile'}
         >Sign Out</Button>
+        </li>
+        </ul>
         </nav>
     );
 }
