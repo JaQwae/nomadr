@@ -1,13 +1,16 @@
 const { Country } = require("../models");
 const { AuthenticationError } = require("apollo-server-express");
 const { User } = require("../models");
-const { signToken } = require("../utils/auth");
+//const { signToken } = require("../utils/auth");
 
 const resolvers = {
   Query: {
-    country: async (parent, { _id }) => {
-      const params = _id ? { _id } : {};
-      return Country.find(params);
+    country: async (parent, { countryName }) => {
+      const params = countryName ? { country: countryName } : {};
+      // console.log(params)
+      let KC = await Country.find(params);
+      // console.log(KC)
+      return KC
     },
     users: async () => {
       return User.find().populate();

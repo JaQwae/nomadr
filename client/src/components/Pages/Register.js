@@ -1,16 +1,15 @@
 import React, { useState } from "react";
-
- const Login = (props) =>{
+const Register = (props) => {
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
+    const [name, setName] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(email);
     }
-    return(
 
-
+    return (
         <div className = "Home">
         <br></br>
       <h1>A New Sky, A New Life.</h1>
@@ -56,15 +55,17 @@ import React, { useState } from "react";
     <div className = "grid-item1">
       <div class = "loginformcontainer1">
       <div className="auth-form-container">
-            <h2>Login</h2>
-        <form className="login-form" onSubmit={handleSubmit}>
+            <h2>Register</h2>
+        <form className="register-form" onSubmit={handleSubmit}>
+            <label htmlFor="name">Full Name</label><br></br>
+            <input value={name} onChange={(e) => setName(e.target.value)} name="name" id="name" placeholder="User's Full Name"/><br></br>
             <label htmlFor="email">Email</label><br></br>
             <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="example@email.com" id="email" name="email" /><br></br>
             <label htmlFor="password">Password</label><br></br>
             <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="*********" id="password" name="password" /><br></br>
-            <button type="submit">Log In</button><br></br>
+            <button type="submit">Sign Up</button><br></br>
         
-        <button className="link-btn" onClick={()=> props.onFormSwitch('register')}>Don't have an account? Register here</button>
+        <button className="link-btn" onClick={()=> props.onFormSwitch('login')}>Already have an account? Login here</button>
         </form>
         </div>
 
@@ -76,7 +77,11 @@ import React, { useState } from "react";
    
     </div>
    </div>
-        
+
+
+
+
+      
     )
 }
-export default Login;
+export default Register;

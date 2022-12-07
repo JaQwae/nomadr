@@ -1,9 +1,8 @@
 import { gql } from '@apollo/client';
 
 export const QUERY_COUNTRY = gql`
-  query Country {
-    Country{
-    user(username: $username) {
+  query Country($countryName: String!) {
+    country(countryName: $countryName) {
       _id
       country
       program
@@ -15,7 +14,6 @@ export const QUERY_COUNTRY = gql`
       healthInsurance
     }
     }
-  }
 `;
 
 export const QUERY_ME = gql`
@@ -31,8 +29,8 @@ export const QUERY_ME = gql`
 export const QUERY_INCOME = gql`
   query Income{
     Income{
-   id
-   income
+      id
+      income
     }
   }
 `;
