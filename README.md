@@ -94,8 +94,12 @@ A huge thank you to
 
 ## Mock up
 Deployed live on https://.................. . Check out!
-
-Insert pictures here
+![](assets/Screen%20Shot%202022-12-06%20at%206.12.19%20PM.png%0D) 
+![](assets/Screen%20Shot%202022-12-06%20at%206.12.14%20PM.png%0D) 
+![](assets/Screen%20Shot%202022-12-06%20at%206.12.09%20PM.png%0D) 
+![](assets/Screen%20Shot%202022-12-06%20at%206.12.02%20PM.png%0D) 
+![](assets/Screen%20Shot%202022-12-06%20at%206.11.54%20PM.png%0D) 
+![](assets/Screen%20Shot%202022-12-06%20at%206.11.49%20PM.png) 
 <<<<<<< HEAD
 
 Powerpoint presenatation-https://docs.google.com/presentation/d/1fY15dt7o0yKCX1GcfYGT1BVqoMj2rFi3UZVbRDnb2fw/edit?usp=sharing
