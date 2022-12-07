@@ -98,6 +98,7 @@ Deployed live on https://.................. . Check out!
 Insert pictures here
 <<<<<<< HEAD
 
+Powerpoint presenatation-https://docs.google.com/presentation/d/1fY15dt7o0yKCX1GcfYGT1BVqoMj2rFi3UZVbRDnb2fw/edit?usp=sharing
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
