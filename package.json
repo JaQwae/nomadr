@@ -2,6 +2,9 @@
     "name": "nomadr",
     "version": "1.0.0",
     "description": "",
+    "engines": {
+        "node": "18.x"
+    },
     "main": "server/server.js",
     "scripts": {
         "seed": "cd server && node seeds/seeds.js",
